@@ -1,0 +1,28 @@
+@JoyBoxPlatform_HostAddress = http://localhost:5098
+
+### Get all games
+GET {{JoyBoxPlatform_HostAddress}}/api/games
+Accept: application/json
+
+### Get a specific game by ID
+GET {{JoyBoxPlatform_HostAddress}}/api/games/1
+Accept: application/json
+
+### Upload a game (replace path/to/file.zip)
+POST {{JoyBoxPlatform_HostAddress}}/api/games/upload
+Content-Type: multipart/form-data
+
+--boundary
+Content-Disposition: form-data; name="title"
+
+My First Game
+--boundary
+Content-Disposition: form-data; name="description"
+
+A simple test game.
+--boundary
+Content-Disposition: form-data; name="zipFile"; filename="game.zip"
+Content-Type: application/zip
+
+< ./path/to/game.zip
+--boundary--

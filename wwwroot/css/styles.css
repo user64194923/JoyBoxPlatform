@@ -1,0 +1,120 @@
+﻿body {
+    font-family: JetBrains Mono;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'), url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    header h1 {
+        position: absolute;
+        top: 20px;
+        font-size: 5.5em;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 2px 2px 5px #000;
+    }
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+    form input, form textarea, form button {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1em;
+    }
+
+    form input, form textarea {
+        background-color: #555;
+        color: #fff;
+    }
+
+    form button {
+        background-color: #4a90e2;
+        color: #fff;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+        form button:hover {
+            background-color: #357ab8;
+        }
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.game-id {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.game-description {
+    flex-grow: 1;
+    margin-bottom: 10px;
+}
+
+.game-buildpath {
+    font-size: 0.85em;
+    color: #aaa;
+    word-wrap: break-word;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
