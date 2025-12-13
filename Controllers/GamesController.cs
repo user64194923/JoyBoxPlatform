@@ -34,7 +34,7 @@ namespace JoyBoxPlatform.Controllers
         }
 
         [HttpPost("upload")]
-        public async Task<IActionResult> Upload([FromForm] GameUploadDto dto)
+        public async Task<IActionResult> Upload([FromForm] DTOs.GameUploadDto dto)
         {
             if (dto.ZipFile == null || dto.ZipFile.Length == 0)
                 return BadRequest("Invalid file");
@@ -65,12 +65,5 @@ namespace JoyBoxPlatform.Controllers
 
     }
 
-    // DTO for file uploads
-    public class GameUploadDto
-    {
-        public IFormFile ZipFile { get; set; } = null!;
-        public string Title { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-    }
 
 }

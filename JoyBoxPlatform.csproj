@@ -7,20 +7,33 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<!-- EF Core base -->
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.22" />
+
+		<!-- SQL Server provider -->
 		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.22" />
+
+		<!-- EF tools -->
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.22">
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.0.1" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.0.1" />
+
+		<!-- Identity -->
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.22" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.22" />
+
+		<!-- Swagger -->
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
 	</ItemGroup>
+
+
 
 	<ItemGroup>
 		<None Include="wwwroot\index.html" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<Folder Include="Microsoft\OpenApi\" />
 		<Folder Include="wwwroot\games\" />
 	</ItemGroup>
 
