@@ -1,3 +1,4 @@
+wwwroot\css\styles.css
 wwwroot\games\70a55741-adce-4d35-85bc-1bd1b83bb3de\Unity-GOAP-master\Assets\_Project\Scripts\Animation.meta
 wwwroot\games\70a55741-adce-4d35-85bc-1bd1b83bb3de\Unity-GOAP-master\Assets\_Project\Scripts\Animation\AnimationController.cs
 wwwroot\games\70a55741-adce-4d35-85bc-1bd1b83bb3de\Unity-GOAP-master\Assets\_Project\Scripts\Animation\AnimationController.cs.meta
@@ -35,6 +36,5 @@ wwwroot\games\70a55741-adce-4d35-85bc-1bd1b83bb3de\Unity-GOAP-master\Assets\_Pro
 wwwroot\games\70a55741-adce-4d35-85bc-1bd1b83bb3de\Unity-GOAP-master\README.md
 wwwroot\images\auth-bg.jpg
 wwwroot\images\header.jpg
-wwwroot\js\auth.js
-wwwroot\css\styles.css
 wwwroot\index.html
+wwwroot\js\auth.js

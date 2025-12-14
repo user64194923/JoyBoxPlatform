@@ -39,7 +39,10 @@ namespace JoyBoxPlatform.Controllers
             var result = await _userManager.CreateAsync(user, dto.Password);
 
             if (!result.Succeeded)
-                return BadRequest(result.Errors);
+            {
+                // Return a simple array of strings for frontend
+                return BadRequest(result.Errors.Select(e => e.Description));
+            }
 
             var token = await _userManager.GenerateEmailConfirmationTokenAsync(user);
             var link = Url.Action("ConfirmEmail", "Auth",
@@ -53,11 +56,19 @@ namespace JoyBoxPlatform.Controllers
             return Ok();
         }
 
+
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto dto)
         {
+            ApplicationUser? user =
+                await _userManager.FindByEmailAsync(dto.Email)
+                ?? _userManager.Users.FirstOrDefault(u => u.Nickname == dto.Email);
+
+            if (user == null)
+                return Unauthorized();
+
             var result = await _signInManager.PasswordSignInAsync(
-                dto.Email,
+                user.UserName!,
                 dto.Password,
                 false,
                 false
@@ -68,6 +79,7 @@ namespace JoyBoxPlatform.Controllers
 
             return Ok();
         }
+
 
         [Authorize]
         [HttpPost("logout")]

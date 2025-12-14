@@ -13,19 +13,17 @@
         <div class="auth-card">
             <h2>Sign in</h2>
 
-            <input id="email" class="auth-input" placeholder="Email or Nickname">
-            <input id="password" class="auth-input" type="password" placeholder="Password">
-
-            <button class="auth-button" onclick="login()">Sign in</button>
+            <input id="loginEmail" class="auth-input" placeholder="Email or Nickname">
+            <input id="loginPassword" class="auth-input" type="password" placeholder="Password">
+            <button id="loginBtn" class="auth-button">Sign in</button>
+            <div id="authError" class="auth-error"></div>
 
             <div class="auth-link">
-                Not registered?
-                <a href="/register.html">Sign up</a>
+                Not registered? <a href="/register.html">Sign up</a>
             </div>
-
-            <div id="error" class="auth-error"></div>
         </div>
     </div>
+
 
     <script src="js/auth.js"></script>
 </body>
