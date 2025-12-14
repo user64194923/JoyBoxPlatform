@@ -70,6 +70,14 @@ namespace JoyBoxPlatform.Controllers
         }
 
         [Authorize]
+        [HttpPost("logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return Ok();
+        }
+
+        [Authorize]
         [HttpGet("me")]
         public async Task<IActionResult> Profile()
         {
@@ -90,7 +98,6 @@ namespace JoyBoxPlatform.Controllers
             await _userManager.DeleteAsync(user);
             return Ok();
         }
-
 
     }
 }

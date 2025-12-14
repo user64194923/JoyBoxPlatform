@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <a href="/" class="home-btn">← Home</a>
+
+    <div class="auth-background">
+        <div class="auth-card">
+            <h2>Create account</h2>
+
+            <input id="email" class="auth-input" placeholder="Email">
+            <input id="nickname" class="auth-input" placeholder="Nickname">
+            <input id="password" class="auth-input" type="password" placeholder="Password">
+
+            <button class="auth-button" onclick="register()">Sign up</button>
+
+            <div class="auth-link">
+                Already registered?
+                <a href="/login.html">Sign in</a>
+            </div>
+
+            <div id="error" class="auth-error"></div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -8,6 +8,12 @@
 <body>
     <header style="background-image: url('images/header.jpg');">
         <h1>JoyBox Platform</h1>
+
+        <div id="topAuth">
+            <a href="/login.html" class="auth-btn">Sign in</a>
+            <a href="/register.html" class="auth-btn primary">Sign up</a>
+        </div>
+
     </header>
 
     <main>
@@ -31,6 +37,9 @@
     </main>
 
     <script>
+
+
+
         async function loadGames() {
             const container = document.getElementById('gamesContainer');
             const errorDiv = document.getElementById('gamesError');
@@ -46,11 +55,11 @@
                     card.className = 'game-card';
 
                     card.innerHTML = `
-                            <div class="game-title">${game.title}</div>
-                            <div class="game-id">ID: ${game.id}</div>
-                            <div class="game-description">${game.description}</div>
-                            <div class="game-buildpath">Build Path: ${game.buildFolderPath}</div>
-                        `;
+                                    <div class="game-title">${game.title}</div>
+                                    <div class="game-id">ID: ${game.id}</div>
+                                    <div class="game-description">${game.description}</div>
+                                    <div class="game-buildpath">Build Path: ${game.buildFolderPath}</div>
+                                `;
 
                     container.appendChild(card);
                 });
@@ -109,5 +118,28 @@
         // Load games on page load
         loadGames();
     </script>
+
+    <script>
+        (async () => {
+            const res = await fetch("/api/users/me", { credentials: "include" });
+            if (!res.ok) return;
+
+            const user = await res.json();
+
+            document.getElementById("topAuth").innerHTML = `
+            <span>Hello, <strong>${user.nickname}</strong></span>
+            <a href="#" onclick="logout()">Logout</a>
+        `;
+        })();
+
+        async function logout() {
+            await fetch("/api/users/logout", {
+                method: "POST",
+                credentials: "include"
+            });
+            location.reload();
+        }
+    </script>
+
 </body>
 </html>

@@ -35,6 +35,138 @@ header {
         text-shadow: 2px 2px 5px #000;
     }
 
+#topAuth {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    gap: 12px;
+}
+
+.auth-btn {
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #555;
+}
+
+    .auth-btn:hover {
+        background: #444;
+    }
+
+    .auth-btn.primary {
+        background: #4a90e2;
+        border-color: #4a90e2;
+    }
+
+        .auth-btn.primary:hover {
+            background: #357ab8;
+        }
+/* AUTH BACKGROUND */
+.auth-background {
+    min-height: 100vh;
+    background: url("/images/auth-bg.jpg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* AUTH CARD */
+.auth-card {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 40px;
+    width: 360px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+    /* TITLE */
+    .auth-card h2 {
+        margin-bottom: 25px;
+        font-size: 2em;
+    }
+
+/* INPUTS */
+.auth-input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background: #2e2e2e;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+    .auth-input:focus {
+        box-shadow: 0 0 0 2px #4a90e2;
+    }
+
+/* BUTTON */
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+    .auth-button:hover {
+        background: #357ab8;
+    }
+
+/* LINKS */
+.auth-link {
+    margin-top: 18px;
+    font-size: 0.9em;
+}
+
+    .auth-link a {
+        color: #4a90e2;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .auth-link a:hover {
+            text-decoration: underline;
+        }
+
+/* ERROR */
+.auth-error {
+    color: #ff6b6b;
+    margin-top: 12px;
+}
+
+/* HOME BUTTON */
+.home-btn {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: rgba(30, 30, 30, 0.8);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .home-btn:hover {
+        background: rgba(50, 50, 50, 0.9);
+    }
+
+
+
 main {
     padding: 20px;
     max-width: 1200px;

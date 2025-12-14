@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\login.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\js\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\js\\auth.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\dtos\\gameuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:dtos\\gameuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,36 +55,20 @@
       "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\joyboxplatform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:joyboxplatform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\dtos\\gameuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:dtos\\gameuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:controllers\\gamescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\joyboxplatform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:joyboxplatform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -63,16 +83,8 @@
       "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|solutionrelative:wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA955310-B997-4923-B9F1-2F24C3D99E79}|JoyBoxPlatform.csproj|c:\\users\\musor\\source\\repos\\joyboxplatform\\services\\igameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,11 +102,115 @@
       "DocumentGroups": [
         {
           "DockedWidth": 198,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\register.html",
+              "RelativeDocumentMoniker": "wwwroot\\register.html",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\register.html",
+              "RelativeToolTip": "wwwroot\\register.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-14T11:11:17.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.html",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\login.html",
+              "RelativeDocumentMoniker": "wwwroot\\login.html",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\login.html",
+              "RelativeToolTip": "wwwroot\\login.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-14T11:11:10.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "auth.js",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\js\\auth.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\auth.js",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\js\\auth.js",
+              "RelativeToolTip": "wwwroot\\js\\auth.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-14T11:09:46.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwDEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:11:37.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:37:31.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:37:07.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Services\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:14:17.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GameUploadDto.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\GameUploadDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\GameUploadDto.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\GameUploadDto.cs",
+              "RelativeToolTip": "DTOs\\GameUploadDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:35:33.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "ApplicationUser.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Models\\ApplicationUser.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
@@ -107,57 +223,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T13:30:46.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\UsersController.cs",
               "RelativeToolTip": "Controllers\\UsersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-13T15:20:12.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAuwD0AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:11:37.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "JoyBoxPlatform.csproj",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\JoyBoxPlatform.csproj",
-              "RelativeDocumentMoniker": "JoyBoxPlatform.csproj",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\JoyBoxPlatform.csproj",
-              "RelativeToolTip": "JoyBoxPlatform.csproj",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-13T15:31:51.046Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\index.html",
+              "RelativeToolTip": "wwwroot\\index.html",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-06T13:54:29.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "wwwroot\\css\\styles.css",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAiwKYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-06T15:00:20.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GamesController.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\GamesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\GamesController.cs",
+              "RelativeToolTip": "Controllers\\GamesController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-13T15:20:47.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -170,67 +288,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GamesController.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\GamesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GamesController.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Controllers\\GamesController.cs",
-              "RelativeToolTip": "Controllers\\GamesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:20:47.512Z"
+              "WhenOpened": "2025-12-06T13:30:46.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\LoginDTO.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\LoginDTO.cs",
-              "RelativeToolTip": "DTOs\\LoginDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:37:31.989Z"
+              "DocumentIndex": 15,
+              "Title": "JoyBoxPlatform.csproj",
+              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\JoyBoxPlatform.csproj",
+              "RelativeDocumentMoniker": "JoyBoxPlatform.csproj",
+              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\JoyBoxPlatform.csproj",
+              "RelativeToolTip": "JoyBoxPlatform.csproj",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-13T15:31:51.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\RegisterDTO.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\RegisterDTO.cs",
-              "RelativeToolTip": "DTOs\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:37:07.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EmailSender.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\EmailSender.cs",
-              "RelativeDocumentMoniker": "Services\\EmailSender.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\EmailSender.cs",
-              "RelativeToolTip": "Services\\EmailSender.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:14:17.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameUploadDto.cs",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\GameUploadDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\GameUploadDto.cs",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\DTOs\\GameUploadDto.cs",
-              "RelativeToolTip": "DTOs\\GameUploadDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T15:35:33.573Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Models\\Game.cs",
               "RelativeDocumentMoniker": "Models\\Game.cs",
@@ -242,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -254,7 +337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "Migrations\\AppDbContextModelSnapshot.cs",
@@ -266,31 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "styles.css",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\css\\styles.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\styles.css",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\css\\styles.css",
-              "RelativeToolTip": "wwwroot\\css\\styles.css",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAABcAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-06T15:00:20.21Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\wwwroot\\index.html",
-              "RelativeToolTip": "wwwroot\\index.html",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAYwHEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-12-06T13:54:29.568Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
@@ -302,7 +361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "JoyBoxPlatform.http",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\JoyBoxPlatform.http",
               "RelativeDocumentMoniker": "JoyBoxPlatform.http",
@@ -314,7 +373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\GameService.cs",
               "RelativeDocumentMoniker": "Services\\GameService.cs",
@@ -326,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "IGameService.cs",
               "DocumentMoniker": "C:\\Users\\musor\\source\\repos\\JoyBoxPlatform\\Services\\IGameService.cs",
               "RelativeDocumentMoniker": "Services\\IGameService.cs",

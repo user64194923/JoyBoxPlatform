@@ -152,3 +152,4 @@ C:\Users\musor\source\repos\JoyBoxPlatform\obj\Debug\net8.0\refint\JoyBoxPlatfor
 C:\Users\musor\source\repos\JoyBoxPlatform\obj\Debug\net8.0\JoyBoxPlatform.pdb
 C:\Users\musor\source\repos\JoyBoxPlatform\obj\Debug\net8.0\JoyBoxPlatform.genruntimeconfig.cache
 C:\Users\musor\source\repos\JoyBoxPlatform\obj\Debug\net8.0\ref\JoyBoxPlatform.dll
+C:\Users\musor\source\repos\JoyBoxPlatform\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
