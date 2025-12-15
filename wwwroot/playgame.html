@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: white;
+        }
+
+        .player-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .player-header {
+            padding: 10px;
+            background: #111;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+            .player-header button {
+                padding: 6px 12px;
+                cursor: pointer;
+            }
+
+        iframe {
+            flex: 1;
+            border: none;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="player-container">
+        <div class="player-header">
+            <button onclick="window.location.href='/'">← Back</button>
+            <span id="gameTitle"></span>
+        </div>
+
+        <iframe id="gameFrame"></iframe>
+    </div>
+
+    <script>
+    const params = new URLSearchParams(window.location.search);
+    const gameId = params.get("id");
+
+    if (!gameId) {
+        alert("Game not found");
+        location.href = "/";
+    }
+
+    fetch(`/api/games/${gameId}`)
+        .then(r => r.json())
+        .then(game => {
+            document.getElementById("gameTitle").textContent = game.title;
+            document.getElementById("gameFrame").src =
+                `${game.buildFolderPath}/index.html`;
+        })
+        .catch(() => {
+            alert("Failed to load game");
+            location.href = "/";
+        });
+    </script>
+
+</body>
+</html>

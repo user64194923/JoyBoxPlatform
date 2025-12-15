@@ -13,22 +13,6 @@ namespace JoyBoxPlatform.Services
             _context = context;
         }
 
-        /*
-        public GameService(AppDbContext context)
-        {
-            _context = context;
-
-            // Inicializar con algunos juegos por defecto
-            if (!_context.Games.Any())
-            {
-                _context.Games.AddRange(
-                    new Game { Title = "Super Fun Game", Description = "A fun game to test." },
-                    new Game { Title = "Adventure Quest", Description = "An adventurous journey." }
-                );
-                _context.SaveChanges();
-            }
-        }
-        */
         public async Task<Game> Create(Game game)
         {
             _context.Games.Add(game);
@@ -41,5 +25,22 @@ namespace JoyBoxPlatform.Services
 
         public async Task<Game?> Get(int id)
             => await _context.Games.FirstOrDefaultAsync(g => g.Id == id);
+
+        public async Task Update(Game game)
+        {
+            _context.Games.Update(game);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task Delete(int id)
+        {
+            var game = await _context.Games.FindAsync(id);
+            if (game == null) return;
+
+            _context.Games.Remove(game);
+            await _context.SaveChangesAsync();
+        }
     }
+
+
 }

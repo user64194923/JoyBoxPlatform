@@ -7,5 +7,8 @@ namespace JoyBoxPlatform.Services
         Task<List<Game>> GetAll();
         Task<Game?> Get(int id);
         Task<Game> Create(Game game);
+
+        Task Update(Game game);
+        Task Delete(int id);
     }
 }

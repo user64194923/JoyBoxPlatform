@@ -27,6 +27,43 @@
   },
   {
     "ContainingType": "JoyBoxPlatform.Controllers.GamesController",
+    "Method": "Update",
+    "RelativePath": "api/games/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updated",
+        "Type": "JoyBoxPlatform.Models.Game",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JoyBoxPlatform.Controllers.GamesController",
+    "Method": "Delete",
+    "RelativePath": "api/games/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "JoyBoxPlatform.Controllers.GamesController",
     "Method": "Upload",
     "RelativePath": "api/games/upload",
     "HttpMethod": "POST",

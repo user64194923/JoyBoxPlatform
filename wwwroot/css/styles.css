@@ -208,42 +208,64 @@ form {
 
 .game-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
 }
 
 .game-card {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    background: #454c63;
+    border-radius: 14px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 10px;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+}
+
+.game-icon {
+    filter: none !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #111;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
 .game-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.game-id {
-    font-size: 0.9em;
-    color: #ccc;
-    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .game-description {
-    flex-grow: 1;
-    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
-.game-buildpath {
-    font-size: 0.85em;
-    color: #aaa;
-    word-wrap: break-word;
+.play-btn {
+    margin-top: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s ease;
 }
+
+.play-btn:hover {
+    background: #357abd;
+}
+
+
 
 .error {
     color: red;

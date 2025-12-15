@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header style="background-image: url('images/header.jpg');">
         <h1>JoyBox Platform</h1>
 
@@ -13,10 +14,11 @@
             <a href="/login.html" class="auth-btn">Sign in</a>
             <a href="/register.html" class="auth-btn primary">Sign up</a>
         </div>
-
     </header>
 
     <main>
+
+        <!-- Upload -->
         <section id="uploadSection">
             <h2>Upload a Game</h2>
             <form id="uploadForm">
@@ -25,97 +27,94 @@
                 <input type="file" id="zipFile" accept=".zip" required>
                 <button type="submit">Upload Game</button>
             </form>
+
             <div id="uploadError" class="error"></div>
-            <div id="uploadSuccess" style="color: #4a90e2; font-weight: bold;"></div>
+            <div id="uploadSuccess" class="success"></div>
         </section>
 
+        <!-- Games -->
         <section id="gamesSection">
             <h2>Available Games</h2>
             <div id="gamesContainer" class="game-grid"></div>
             <div id="gamesError" class="error"></div>
         </section>
+
     </main>
 
     <script>
-
-
-
         async function loadGames() {
             const container = document.getElementById('gamesContainer');
             const errorDiv = document.getElementById('gamesError');
+
             try {
                 const response = await fetch('/api/games');
-                if (!response.ok) throw new Error('Failed to fetch games');
-                const games = await response.json();
+                if (!response.ok) throw new Error();
 
+                const games = await response.json();
                 container.innerHTML = '';
 
                 games.forEach(game => {
                     const card = document.createElement('div');
                     card.className = 'game-card';
 
+                    const iconPath = `${game.buildFolderPath}/icon.png`;
+
                     card.innerHTML = `
-                                    <div class="game-title">${game.title}</div>
-                                    <div class="game-id">ID: ${game.id}</div>
-                                    <div class="game-description">${game.description}</div>
-                                    <div class="game-buildpath">Build Path: ${game.buildFolderPath}</div>
-                                `;
+                        <img class="game-icon"
+                             src="${iconPath}"
+                             onerror="this.src='images/default-game.png'">
+
+                        <div class="game-content">
+                            <div class="game-title">${game.title}</div>
+                            <div class="game-description">${game.description}</div>
+
+                            <button class="play-btn" onclick="playGame(${game.id})">
+                                ▶ Play
+                            </button>
+                        </div>
+                    `;
+
 
                     container.appendChild(card);
                 });
-            } catch (err) {
-                console.error(err);
+            } catch {
                 errorDiv.textContent = 'Failed to load games.';
             }
         }
 
-        async function uploadGame(event) {
-            event.preventDefault();
+        function playGame(id) {
+            window.location.href = `/playgame.html?id=${id}`;
+        }
 
-            const title = document.getElementById('title').value;
-            const description = document.getElementById('description').value;
-            const zipFile = document.getElementById('zipFile').files[0];
-            const errorDiv = document.getElementById('uploadError');
-            const successDiv = document.getElementById('uploadSuccess');
-
-            errorDiv.textContent = '';
-            successDiv.textContent = '';
-
-            if (!title || !description || !zipFile) {
-                errorDiv.textContent = 'All fields are required.';
-                return;
-            }
+        async function uploadGame(e) {
+            e.preventDefault();
 
             const formData = new FormData();
-            formData.append('Title', title);
-            formData.append('Description', description);
-            formData.append('ZipFile', zipFile);
+            formData.append('Title', title.value);
+            formData.append('Description', description.value);
+            formData.append('ZipFile', zipFile.files[0]);
+
+            uploadError.textContent = '';
+            uploadSuccess.textContent = '';
 
             try {
-                const response = await fetch('/api/games/upload', {
+                const res = await fetch('/api/games/upload', {
                     method: 'POST',
                     body: formData
                 });
 
-                if (!response.ok) throw new Error('Failed to upload game');
+                if (!res.ok) throw new Error();
 
-                const game = await response.json();
-                successDiv.textContent = `Game "${game.title}" uploaded successfully!`;
-
-                // Clear form
-                document.getElementById('uploadForm').reset();
-
-                // Reload game list
+                const game = await res.json();
+                uploadSuccess.textContent = `Game "${game.title}" uploaded successfully!`;
+                uploadForm.reset();
                 loadGames();
-            } catch (err) {
-                console.error(err);
-                errorDiv.textContent = 'Failed to upload game.';
+            } catch {
+                uploadError.textContent = 'Failed to upload game.';
             }
         }
 
-        document.getElementById('uploadForm').addEventListener('submit', uploadGame);
-
-        // Load games on page load
+        uploadForm.addEventListener('submit', uploadGame);
         loadGames();
     </script>
 
@@ -125,11 +124,10 @@
             if (!res.ok) return;
 
             const user = await res.json();
-
             document.getElementById("topAuth").innerHTML = `
-            <span>Hello, <strong>${user.nickname}</strong></span>
-            <a href="#" onclick="logout()">Logout</a>
-        `;
+                <span class="welcome">Hello, <strong>${user.nickname}</strong></span>
+                <a href="#" class="auth-btn" onclick="logout()">Logout</a>
+            `;
         })();
 
         async function logout() {

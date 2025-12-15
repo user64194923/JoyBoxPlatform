@@ -63,6 +63,41 @@ namespace JoyBoxPlatform.Controllers
             return Ok(created);
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id, Game updated)
+        {
+            var game = await _service.Get(id);
+            if (game == null)
+                return NotFound();
+
+            game.Title = updated.Title;
+            game.Description = updated.Description;
+
+            await _service.Update(game);
+            return Ok(game);
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var game = await _service.Get(id);
+            if (game == null)
+                return NotFound();
+
+            // delete game folder
+            if (!string.IsNullOrEmpty(game.BuildFolderPath))
+            {
+                var path = Path.Combine(_env.WebRootPath!, game.BuildFolderPath.TrimStart('/'));
+                if (Directory.Exists(path))
+                    Directory.Delete(path, true);
+            }
+
+            await _service.Delete(id);
+            return Ok();
+        }
+
+
     }
 
 
