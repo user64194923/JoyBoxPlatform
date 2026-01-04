@@ -7,6 +7,9 @@
     async function login() {
         authError.textContent = "";
 
+        loginBtn.classList.add("loading");
+
+
         const res = await fetch("/api/users/login", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -19,10 +22,19 @@
 
         if (!res.ok) {
             authError.textContent = "Invalid email/nickname or password.";
+            loginBtn.classList.remove("loading");
+
             return;
         }
 
-        alert("Logged in successfully!");
+        loginBtn.classList.remove("loading");
+
+        document.querySelector(".auth-card").classList.add("success");
+
+        setTimeout(() => {
+            window.location.href = "/";
+        }, 600);
+
         // Optionally redirect or load profile
     }
 

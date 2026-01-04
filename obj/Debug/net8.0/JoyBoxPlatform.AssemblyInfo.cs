@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JoyBoxPlatform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f8592e2a91eaca6b6c4836fe33ed5ae488e7f6a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+768649659a971471c3fccb8b8380ba189b5d9134")]
 [assembly: System.Reflection.AssemblyProductAttribute("JoyBoxPlatform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JoyBoxPlatform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,7 +8,9 @@
 
 	<ItemGroup>
 	  <Content Remove="wwwroot\login.html" />
+	  <Content Remove="wwwroot\profile.html" />
 	  <Content Remove="wwwroot\register.html" />
+	  <Content Remove="wwwroot\upload.html" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -34,6 +36,8 @@
 
 
 	<ItemGroup>
+		<None Include="wwwroot\profile.html" />
+		<None Include="wwwroot\upload.html" />
 		<None Include="wwwroot\register.html" />
 		<None Include="wwwroot\login.html" />
 		<None Include="wwwroot\index.html" />
@@ -42,7 +46,6 @@
 	<ItemGroup>
 		<Folder Include="Microsoft\OpenApi\" />
 		<Folder Include="wwwroot\games\0f2a127e-6a00-414b-8b93-06e5d70e824a\dino\" />
-		<Folder Include="wwwroot\games\221cae06-484a-4252-86c3-6f152617adbf\chess\" />
 		<Folder Include="wwwroot\games\e8e40e7c-1652-47b7-9968-a1104e080533\celeste\" />
 	</ItemGroup>
 

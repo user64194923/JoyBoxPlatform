@@ -7,34 +7,30 @@
 </head>
 <body>
 
-    <header style="background-image: url('images/header.jpg');">
-        <h1>JoyBox Platform</h1>
-
-        <div id="topAuth">
-            <a href="/login.html" class="auth-btn">Sign in</a>
-            <a href="/register.html" class="auth-btn primary">Sign up</a>
+    <header class="topbar">
+        <div class="logo">
+            <span class="logo-text">JoyBox</span>
         </div>
+
+        <nav class="nav-right" id="navRight">
+            <a href="/login.html" class="nav-link">Sign in</a>
+            <a href="/register.html" class="nav-btn primary">Sign up</a>
+        </nav>
     </header>
 
     <main>
 
-        <!-- Upload -->
-        <section id="uploadSection">
-            <h2>Upload a Game</h2>
-            <form id="uploadForm">
-                <input type="text" id="title" placeholder="Game Title" required>
-                <textarea id="description" placeholder="Game Description" rows="3" required></textarea>
-                <input type="file" id="zipFile" accept=".zip" required>
-                <button type="submit">Upload Game</button>
-            </form>
-
-            <div id="uploadError" class="error"></div>
-            <div id="uploadSuccess" class="success"></div>
+        <!-- HERO -->
+        <section class="hero">
+            <h1 class="hero-title">JoyBox</h1>
+            <p class="hero-subtitle">
+                A modern platform for hosting and playing WebGL games
+            </p>
         </section>
 
-        <!-- Games -->
+        <!-- GAMES -->
         <section id="gamesSection">
-            <h2>Available Games</h2>
+            <h2 class="section-title">Available Games</h2>
             <div id="gamesContainer" class="game-grid"></div>
             <div id="gamesError" class="error"></div>
         </section>
@@ -60,20 +56,19 @@
                     const iconPath = `${game.buildFolderPath}/icon.png`;
 
                     card.innerHTML = `
-                        <img class="game-icon"
-                             src="${iconPath}"
-                             onerror="this.src='images/default-game.png'">
+                                <img class="game-icon"
+                                     src="${iconPath}"
+                                     onerror="this.src='images/default-game.png'">
 
-                        <div class="game-content">
-                            <div class="game-title">${game.title}</div>
-                            <div class="game-description">${game.description}</div>
+                                <div class="game-content">
+                                    <div class="game-title">${game.title}</div>
+                                    <div class="game-description">${game.description}</div>
 
-                            <button class="play-btn" onclick="playGame(${game.id})">
-                                ▶ Play
-                            </button>
-                        </div>
-                    `;
-
+                                    <button class="play-btn" onclick="playGame(${game.id})">
+                                        ▶ Play
+                                    </button>
+                                </div>
+                            `;
 
                     container.appendChild(card);
                 });
@@ -85,36 +80,6 @@
         function playGame(id) {
             window.location.href = `/playgame.html?id=${id}`;
         }
-
-        async function uploadGame(e) {
-            e.preventDefault();
-
-            const formData = new FormData();
-            formData.append('Title', title.value);
-            formData.append('Description', description.value);
-            formData.append('ZipFile', zipFile.files[0]);
-
-            uploadError.textContent = '';
-            uploadSuccess.textContent = '';
-
-            try {
-                const res = await fetch('/api/games/upload', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (!res.ok) throw new Error();
-
-                const game = await res.json();
-                uploadSuccess.textContent = `Game "${game.title}" uploaded successfully!`;
-                uploadForm.reset();
-                loadGames();
-            } catch {
-                uploadError.textContent = 'Failed to upload game.';
-            }
-        }
-
-        uploadForm.addEventListener('submit', uploadGame);
         loadGames();
     </script>
 
@@ -124,10 +89,20 @@
             if (!res.ok) return;
 
             const user = await res.json();
-            document.getElementById("topAuth").innerHTML = `
-                <span class="welcome">Hello, <strong>${user.nickname}</strong></span>
-                <a href="#" class="auth-btn" onclick="logout()">Logout</a>
-            `;
+            document.getElementById("navRight").innerHTML = `
+                        <div class="user-menu" id="userMenu">
+                            <button class="user-trigger" id="userTrigger">
+                                ${user.nickname} ▾
+                            </button>
+                            <div class="dropdown" id="userDropdown">
+                                <a href="/profile.html">Profile</a>
+                                <a href="/upload.html">Upload Game</a>
+                                <hr>
+                                <a href="#" onclick="logout()">Logout</a>
+                            </div>
+                        </div>
+                    `;
+
         })();
 
         async function logout() {
@@ -138,6 +113,55 @@
             location.reload();
         }
     </script>
+
+    <script>
+        (async () => {
+            const res = await fetch("/api/users/me", { credentials: "include" });
+            if (!res.ok) return;
+
+            const user = await res.json();
+
+            document.getElementById("navRight").innerHTML = `
+            <div class="user-menu" id="userMenu">
+                <button class="user-trigger" id="userTrigger">
+                    ${user.nickname} ▾
+                </button>
+                <div class="dropdown" id="userDropdown">
+                    <a href="/profile.html">Profile</a>
+                    <a href="/upload.html">Upload Game</a>
+                    <hr>
+                    <a href="#" id="logoutBtn">Logout</a>
+                </div>
+            </div>
+        `;
+
+            const trigger = document.getElementById("userTrigger");
+            const dropdown = document.getElementById("userDropdown");
+
+            trigger.addEventListener("click", e => {
+                e.stopPropagation();
+                dropdown.classList.toggle("open");
+            });
+
+            dropdown.addEventListener("click", e => e.stopPropagation());
+
+            document.addEventListener("click", () => {
+                dropdown.classList.remove("open");
+            });
+
+            document.getElementById("logoutBtn").addEventListener("click", async e => {
+                e.preventDefault();
+                await fetch("/api/users/logout", {
+                    method: "POST",
+                    credentials: "include"
+                });
+                location.reload();
+            });
+        })();
+    </script>
+
+
+
 
 </body>
 </html>

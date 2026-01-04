@@ -1,0 +1,23 @@
+﻿<main class="page">
+    <div class="card wide">
+        <h2>Upload a New Game</h2>
+        <p class="muted">Share your WebGL game with the JoyBox community.</p>
+
+        <form id="uploadForm">
+            <label>Game title</label>
+            <input type="text" id="title" placeholder="My Awesome Game" required>
+
+            <label>Description</label>
+            <textarea id="description" rows="4"
+                      placeholder="Short description of your game" required></textarea>
+
+            <label>Game build (.zip)</label>
+            <input type="file" id="zipFile" accept=".zip" required>
+
+            <button type="submit" class="primary-btn">Upload Game</button>
+        </form>
+
+        <div id="uploadError" class="error"></div>
+        <div id="uploadSuccess" class="success"></div>
+    </div>
+</main>
