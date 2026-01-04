@@ -1,6 +1,6 @@
-# JoyBoxPlatform
+# JoyBoxPlatform – ASP.NET Core Web Platform
 
-JoyBoxPlatform is a **WebGL games catalog and online gaming platform**. It allows developers to upload WebGL games, manage user accounts, and enables players to browse, play, and interact with games online.
+JoyBoxPlatform is a full-stack WebGL gaming platform built with ASP.NET Core 8 and SQL Server, designed to allow developers to publish games and users to discover and play them online.
 
 ---
 
@@ -53,8 +53,14 @@ JoyBoxPlatform is a **WebGL games catalog and online gaming platform**. It allow
 
 ### Setup
 
-1. **Clone the repository**
+1. **Clone the repository:**
 
 ```bash
 git clone https://github.com/user64194923/JoyBoxPlatform.git
 cd JoyBoxPlatform
+```
+2. **Configure appsettings.json and run:**
+```bash
+dotnet ef database update
+dotnet run
+```
