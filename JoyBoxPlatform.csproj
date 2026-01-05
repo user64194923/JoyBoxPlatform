@@ -46,6 +46,11 @@
 	<ItemGroup>
 		<Folder Include="Microsoft\OpenApi\" />
 		<Folder Include="wwwroot\games\0f2a127e-6a00-414b-8b93-06e5d70e824a\dino\" />
+		<Folder Include="wwwroot\games\0f674a5b-b2f9-4455-97ee-1f2b0cf76ba6\mcclassic\" />
+		<Folder Include="wwwroot\games\77001e2d-b595-48de-a526-43e003030923\osu\" />
+		<Folder Include="wwwroot\games\8d0dfedf-e1b1-48da-84f1-f956947347cc\emulatorjs\" />
+		<Folder Include="wwwroot\games\a1692880-2863-496d-9954-38f114ebca5c\superhot\" />
+		<Folder Include="wwwroot\games\dda24e55-86bb-470a-8812-e7f21c645b39\doom\" />
 		<Folder Include="wwwroot\games\e8e40e7c-1652-47b7-9968-a1104e080533\celeste\" />
 	</ItemGroup>
 

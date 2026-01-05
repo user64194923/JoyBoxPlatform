@@ -265,6 +265,11 @@
           "buildFolderPath": {
             "type": "string",
             "nullable": true
+          },
+          "thumbnailPath": {
+            "type": "string",
+            "nullable": true,
+            "readOnly": true
           }
         },
         "additionalProperties": false

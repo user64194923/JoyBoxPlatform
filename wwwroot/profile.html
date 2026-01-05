@@ -1,14 +1,65 @@
-﻿<main class="page">
-    <div class="profile-header">
-        <div class="avatar">🎮</div>
-        <div>
-            <h2 id="nickname">Creator</h2>
-            <p class="muted">JoyBox Game Creator</p>
+﻿<main class="page profile-page">
+    <link rel="stylesheet" href="/css/profile.css">
+
+    <a href="/" class="home-btn">Home</a>
+
+    <div class="card profile-card">
+        <div class="profile-header">
+            <div class="avatar" id="avatar">U</div>
+
+            <div>
+                <h2 id="nickname">Loading…</h2>
+                <p class="muted" id="email"></p>
+                <p class="stat">
+                    Games uploaded: <strong id="gamesCount">0</strong>
+                </p>
+            </div>
         </div>
     </div>
 
-    <section>
+    <section class="card games-card">
         <h3>Your Games</h3>
         <div id="myGames" class="game-grid"></div>
     </section>
 </main>
+
+<script>
+(async () => {
+    const res = await fetch("/api/users/me", { credentials: "include" });
+    if (!res.ok) return location.href = "/login.html";
+
+    const user = await res.json();
+
+    document.getElementById("nickname").textContent = user.nickname;
+    document.getElementById("email").textContent = user.email || "";
+    document.getElementById("avatar").textContent =
+        user.nickname.charAt(0).toUpperCase();
+
+    // Load user's games
+    const gamesRes = await fetch("/api/games/mine", { credentials: "include" });
+    if (!gamesRes.ok) return;
+
+    const games = await gamesRes.json();
+    document.getElementById("gamesCount").textContent = games.length;
+
+    const container = document.getElementById("myGames");
+    container.innerHTML = "";
+
+    games.forEach(game => {
+        const card = document.createElement("div");
+        card.className = "game-card";
+
+        card.innerHTML = `
+            <img class="game-icon"
+                 src="${game.buildFolderPath}/icon.png"
+                 onerror="this.src='/images/default-game.png'">
+
+            <div class="game-content">
+                <div class="game-title">${game.title}</div>
+                <div class="game-description">${game.description}</div>
+            </div>
+        `;
+        container.appendChild(card);
+    });
+})();
+</script>

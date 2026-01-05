@@ -56,19 +56,19 @@
                     const iconPath = `${game.buildFolderPath}/icon.png`;
 
                     card.innerHTML = `
-                                <img class="game-icon"
-                                     src="${iconPath}"
-                                     onerror="this.src='images/default-game.png'">
+                                    <img class="game-icon"
+                                         src="${iconPath}"
+                                         onerror="this.src='images/default-game.png'">
 
-                                <div class="game-content">
-                                    <div class="game-title">${game.title}</div>
-                                    <div class="game-description">${game.description}</div>
+                                    <div class="game-content">
+                                        <div class="game-title">${game.title}</div>
+                                        <div class="game-description">${game.description}</div>
 
-                                    <button class="play-btn" onclick="playGame(${game.id})">
-                                        ▶ Play
-                                    </button>
-                                </div>
-                            `;
+                                        <button class="play-btn" onclick="playGame(${game.id})">
+                                            ▶ Play
+                                        </button>
+                                    </div>
+                                `;
 
                     container.appendChild(card);
                 });
@@ -89,40 +89,10 @@
             if (!res.ok) return;
 
             const user = await res.json();
-            document.getElementById("navRight").innerHTML = `
-                        <div class="user-menu" id="userMenu">
-                            <button class="user-trigger" id="userTrigger">
-                                ${user.nickname} ▾
-                            </button>
-                            <div class="dropdown" id="userDropdown">
-                                <a href="/profile.html">Profile</a>
-                                <a href="/upload.html">Upload Game</a>
-                                <hr>
-                                <a href="#" onclick="logout()">Logout</a>
-                            </div>
-                        </div>
-                    `;
 
-        })();
-
-        async function logout() {
-            await fetch("/api/users/logout", {
-                method: "POST",
-                credentials: "include"
-            });
-            location.reload();
-        }
-    </script>
-
-    <script>
-        (async () => {
-            const res = await fetch("/api/users/me", { credentials: "include" });
-            if (!res.ok) return;
-
-            const user = await res.json();
-
-            document.getElementById("navRight").innerHTML = `
-            <div class="user-menu" id="userMenu">
+            const nav = document.getElementById("navRight");
+            nav.innerHTML = `
+            <div class="user-menu">
                 <button class="user-trigger" id="userTrigger">
                     ${user.nickname} ▾
                 </button>
@@ -159,6 +129,7 @@
             });
         })();
     </script>
+
 
 
 
