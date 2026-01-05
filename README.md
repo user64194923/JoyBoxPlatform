@@ -4,6 +4,16 @@ JoyBoxPlatform is a full-stack WebGL gaming platform built with ASP.NET Core 8 a
 
 ---
 
+![Main Page Screenshot](./media/main_page.png)
+
+---
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./media/register_page.png" alt="Screenshot 1" style="width: 32%; height: auto;">
+  <img src="./media/game_page.png" alt="Screenshot 2" style="width: 32%; height: auto;">
+  <img src="./media/upload_page.png" alt="Screenshot 3" style="width: 32%; height: auto;">
+</div>  
+
 ## Features
 
 ### Games Discovery
